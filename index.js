@@ -28,7 +28,7 @@ app.post('/chat', (req, res) => {
   const sendQuestion = req.body.question; // 클라이언트에서 받은 질문을 변수에 할당
 
   const execPython = path.join(__dirname, 'bizchat.py'); // 파이썬 파일 경로 설정)
-  const pythonPath = path.join(__dirname, 'chat', 'bin', 'python3'); // 파이썬 파일 경로 설정
+  const pythonPath = path.join(__dirname, 'bin', 'python3'); // 파이썬 파일 경로 설정
   const result = spawn(pythonPath, [execPython, sendQuestion]); // 파이썬 파일 수행
 
   output = '';
