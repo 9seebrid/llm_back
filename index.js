@@ -14,7 +14,7 @@ app.use(cors()); // cors 사용 설정 http, https 프로토콜을 사용하는 
 app.use(express.json()); // json 형식 사용 설정
 
 const corsOptions = {
-  origin: 'http://localhost:3000 ', // 클라이언트의 주소를 명시
+  origin: 'http://llm.9seebird.site ', // 클라이언트의 주소를 명시
   credentials: true, // 자격 증명 허용
 };
 
