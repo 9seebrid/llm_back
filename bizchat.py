@@ -29,7 +29,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
 
 # 문서 로드
-loader = DirectoryLoader('./chat/data', glob="*.txt", loader_cls=TextLoader) # 경로, 타입, 사용 함수
+loader = DirectoryLoader('./data', glob="*.txt", loader_cls=TextLoader) # 경로, 타입, 사용 함수
 documents = loader.load()
 # print(len(documents))
 
